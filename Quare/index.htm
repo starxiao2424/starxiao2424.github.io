@@ -1,32 +1,60 @@
-<html><!--copyleft 2023, Star web stuffs--><head><script>
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script></head>
-    <body><p> <a href="https://starxiao2424.github.io/Quare/AntiochOTRmirror">Vetus tempus radio</a>
-    </p>
+<html><head>
+
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta http-equiv="Cache-Control" content="max-age=60">
+  <title>ABN OTR Antioch Web Player</title>
+</head>
+<body style="background-color: rgb(66, 23, 0); min-height: 665px;" class="EIlDfe EWZcud ecJEib cjGgHb d8Etdd uOat3d">
     
-    <p onclick="myFunction()">Quid
-    </p>
-<div id="myDIV" style="display: none;">
-asdjkm.eicp.net<br>19103<br>a13c1f361e898a52558a72b1e041c5b1
+<center>
+<a href="https://radio.macinmind.com/" target="_blank">
+<img src="https://radio.macinmind.com/ABNapp.png" style="border: 0px solid;width: 400px;height: 240px;"></a><br>
 
-    <br>
-    <p>From: 
-        <br>https://github.com/transmission/transmission-releases/raw/master/transmission-3.00-x64.msi
-    <br>
-    <a href="https://starxiao2424.github.io/Quare/transmission-3.00-x64.msi">https://starxiao2424.github.io/Quare/transmission-3.00-x64.msi</a>(Download)</p>
-    <p>
-        GTA V (60GB)
+<script type="text/javascript">
+function loadFile(fileName) {
+	var txtFile;
+        if (window.XMLHttpRequest)
+	  {// code for IE7+, Firefox, Chrome, Opera, Safari
+	  txtFile = new XMLHttpRequest();
+	  }
+	else
+	  {// code for IE6, IE5
+	  txtFile = new ActiveXObject("Microsoft.XMLHTTP");
+	  }
+	txtFile.open("GET",fileName+"?"+Math.round(new Date().getTime()/60000),false);
+	txtFile.send();
+	var txtDoc=txtFile.responseText;
+	return txtDoc
+}
+
+function reloadCurrent(){
+	return loadFile("https://radio.macinmind.com/onlineh.htm");
+}
+</script>
+<br>
+<font style="color: #af8e54;" size="4" face="Courier">
+    <strong>
+        Now Playing:
         <br>
-    magnet:?xt=urn:btih:1D65688E2B898163EA2959D06CFEFD41320B8C3B&amp;dn=GTA%20V%20-%20Grand%20Theft%20Auto%20V%20-%20Rjaa&amp;tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&amp;tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&amp;tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969%2Fannounce&amp;tr=udp%3A%2F%2F47.ip-51-68-199.eu%3A6969%2Fannounce
-    </p>
-    </div>
+    </strong>
+<div id="metadata"></div><!--i fr test-->
+<iframe src="https://radio.macinmind.com/onlineh.htm" width="400" style="border:none;height: 40px;">
+</iframe>
+<!-- i f test-->
+</font>
 
+<br>
+<audio id="abnaudio" controls="">
+<source src="https://s6.yesstreaming.net:18000/listen">
+</audio>
+<br>
+<a href="https://radio.macinmind.com/" target="_blank"><font style="color: #4c330e;" size="-1" face="helvetica,arial">radio.macinmind.com</font></a>
+</center>
+<script type="text/javascript">
+	var abnaudio = document.getElementById('abnaudio');
+	abnaudio.play();
+	document.getElementById("metadata").innerHTML = reloadCurrent();
+	setInterval(function(){document.getElementById("metadata").innerHTML = reloadCurrent();},30000);
+</script>
 
 </body></html>
