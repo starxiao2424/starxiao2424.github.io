@@ -1,0 +1,13 @@
+<html><head> <!--2023, all rights not reserved--> </head>
+    <head> 
+        <title>Test Layout</title>
+        <style type="text/css">
+            body, html
+            {
+                margin: 0; padding: 0; height: 100%; overflow: hidden;
+            }
+        </style>
+    </head><body>
+        <iframe width="100%" height="100%" src="https://eaglercraft.ru/mc/1.5.2/vanilla/">
+    </body>
+</html></iframe></body></html>
